@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAFILM | Videomarketing für KMU</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body { 
+            background-color: #050505; 
+            color: #ffffff; 
+            font-family: 'Inter', sans-serif; 
+        }
+        .hero-video-overlay {
+            background: linear-gradient(0deg, rgba(5,5,5,1) 0%, rgba(5,5,5,0.4) 50%, rgba(5,5,5,0.7) 100%);
+        }
+        .card-gradient {
+            background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full z-50 px-6 py-4 flex justify-between items-center bg-black/50 backdrop-blur-md">
+        <div class="text-2xl font-black tracking-tighter">KA<span class="text-blue-600">FILM</span></div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+            <a href="#angebote" class="hover:text-blue-500 transition">Preise</a>
+            <a href="#portfolio" class="hover:text-blue-500 transition">Portfolio</a>
+            <a href="#booking" class="bg-blue-600 px-5 py-2 rounded-full hover:bg-blue-700 transition">Beratung buchen</a>
+        </div>
+    </nav>
+
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <iframe 
+                class="w-full h-full scale-[1.5]" 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&controls=0&loop=1&playlist=dQw4w9WgXcQ" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media">
+            </iframe>
+            <div class="absolute inset-0 hero-video-overlay z-10"></div>
+        </div>
+
+        <div class="relative z-20 text-center px-4 max-w-5xl">
+            <h1 class="text-5xl md:text-7xl font-black mb-6 leading-[1.1]">
+                Wir machen keine Videos. <br>
+                <span class="text-blue-600">Wir lösen Probleme.</span>
+            </h1>
+            <p class="text-lg md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto font-light">
+                KMUs in der Region nutzen unsere Werbespots, um die besten Fachkräfte anzuziehen und Premium-Kunden zu gewinnen.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#angebote" class="bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 rounded-xl font-bold text-lg transition shadow-lg shadow-blue-600/20">
+                    Pakete ansehen
+                </a>
+                <a href="#portfolio" class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white px-10 py-5 rounded-xl font-bold text-lg transition">
+                    Referenzen ansehen
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-blue-600 font-bold uppercase tracking-widest mb-4">Ihre Ergebnisse</h2>
+                <p class="text-3xl md:text-5xl font-bold">Was Sie mit Video-Marketing erreichen</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-gradient p-10 rounded-3xl border border-white/5">
+                    <h3 class="text-2xl font-bold mb-4">Fachkräftemangel stoppen</h3>
+                    <p class="text-gray-400 leading-relaxed">Zeigen Sie Bewerbern, warum Ihr Unternehmen der beste Arbeitsplatz in der Region ist. Authentisch und auf Augenhöhe.</p>
+                </div>
+                <div class="card-gradient p-10 rounded-3xl border border-white/5">
+                    <h3 class="text-2xl font-bold mb-4">Anfragen skalieren</h3>
+                    <p class="text-gray-400 leading-relaxed">Werbespots, die Vertrauen aufbauen und aus kühlen Webseiten-Besuchern heiße Leads für Ihr Sales-Team machen.</p>
+                </div>
+                <div class="card-gradient p-10 rounded-3xl border border-white/5">
+                    <h3 class="text-2xl font-bold mb-4">Marken-Autorität</h3>
+                    <p class="text-gray-400 leading-relaxed">Positionieren Sie sich als Experte in Ihrer Nische. Wir sorgen dafür, dass Ihr Auftritt so hochwertig ist wie Ihre Arbeit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="angebote" class="py-24 px-6 bg-[#0a0a0a]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-blue-600 font-bold uppercase tracking-widest mb-4">Investition in Ihr Wachstum</h2>
+                <p class="text-3xl md:text-5xl font-bold">Transparente Pakete für KMUs</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 items-center">
+                <div class="card-gradient p-8 rounded-3xl border border-white/10">
+                    <h3 class="text-2xl font-bold mb-2">Recruiting Starter</h3>
+                    <p class="text-gray-400 text-sm mb-6">Der risikoarme Testlauf für Ihre Mitarbeitersuche.</p>
+                    <div class="text-4xl font-black mb-6">450 € <span class="text-lg text-gray-500 font-normal">netto</span></div>
+                    <ul class="space-y-4 mb-8 text-gray-300 text-sm">
+                        <li>✓ 2 Stunden Videodreh vor Ort (inkl. Region Karlsruhe)</li>
+                        <li>✓ Standardisiertes Kurz-Interview</li>
+                        <li>✓ 1 fertiges Social Media Video (30-60 Sek.)</li>
+                        <li>✓ Max. 1 schnelle Korrekturschleife</li>
+                    </ul>
+                    <a href="#booking" class="block w-full text-center border border-white/20 hover:bg-white/10 text-white py-3 rounded-xl font-bold transition">Starter-Spot sichern</a>
+                </div>
+                <div class="card-gradient p-10 rounded-3xl border-2 border-blue-600 md:-translate-y-4 shadow-2xl shadow-blue-900/20 relative">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-blue-600 px-4 py-1 rounded-full text-xs font-bold uppercase">Am häufigsten gebucht</div>
+                    <h3 class="text-2xl font-bold mb-2">Professional Kampagne</h3>
+                    <p class="text-gray-400 text-sm mb-6">Für messbare Ergebnisse und Marken-Autorität.</p>
+                    <div class="text-4xl font-black mb-6">ab 1.490 € <span class="text-lg text-gray-500 font-normal">netto</span></div>
+                    <ul class="space-y-4 mb-8 text-gray-300 text-sm">
+                        <li>✓ Strategie- & Konzeptentwicklung</li>
+                        <li>✓ Halber Drehtag mit Profi-Licht/Ton</li>
+                        <li>✓ 1 Hauptvideo + 3 Social Media Cut-Downs</li>
+                        <li>✓ Drohnenaufnahmen inklusive (wetterabhängig)</li>
+                    </ul>
+                    <a href="#booking" class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-xl font-bold text-lg transition shadow-lg shadow-blue-600/20">Kostenfreie Beratung</a>
+                </div>
+                <div class="card-gradient p-8 rounded-3xl border border-white/10">
+                    <h3 class="text-2xl font-bold mb-2">Premium Rollout</h3>
+                    <p class="text-gray-400 text-sm mb-6">Maximale Sichtbarkeit und High-End Kinolook.</p>
+                    <div class="text-4xl font-black mb-6">Individuell</div>
+                    <ul class="space-y-4 mb-8 text-gray-300 text-sm">
+                        <li>✓ Mehrere Drehtage & Locations</li>
+                        <li>✓ Einsatz von Schauspielern / Sprechern</li>
+                        <li>✓ Komplette Video-Infrastruktur</li>
+                        <li>✓ Zusammenarbeit mit Ihrer Marketing-Abteilung</li>
+                    </ul>
+                    <a href="#booking" class="block w-full text-center border border-white/20 hover:bg-white/10 text-white py-3 rounded-xl font-bold transition">Potenzialgespräch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-24 bg-zinc-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-16 text-center">Ausgewählte Projekte</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-video rounded-3xl overflow-hidden mb-6">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h4 class="text-xl font-bold group-hover:text-blue-500 transition">Imagefilm // Regionale Logistik GmbH</h4>
+                    <p class="text-gray-500">Ziel: Recruiting von 15 neuen Fahrern</p>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-video rounded-3xl overflow-hidden mb-6">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h4 class="text-xl font-bold group-hover:text-blue-500 transition">Werbespot // Modern Architecture</h4>
+                    <p class="text-gray-500">Ziel: Neukundengewinnung Premium-Sektor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="py-24 px-6 bg-[#0a0a0a]">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Starten Sie jetzt</h2>
+            <p class="text-gray-400 mb-12 text-lg">Wählen Sie einen freien Slot für ein erstes Kennenlernen.</p>
+            <div class="rounded-3xl border border-white/10 overflow-hidden shadow-2xl bg-zinc-900" id="my-cal-inline" style="width:100%;height:600px;overflow:scroll"></div>
+            
+            <script type="text/javascript">
+            (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let a = arguments; if (!a.length) return; let g = a[0]; let e = d.createElement("script"); let s = d.getElementsByTagName("script")[0]; e.src = "https://app.cal.com/embed/embed.js"; e.async = 1; s.parentNode.insertBefore(e, s); C.Cal = function () { let am = arguments; p(C.Cal, am); }; p(C.Cal, a); }; })(window, "Cal");
+            Cal("init", {origin:"https://cal.com"});
+            Cal("inline", {
+                elementOrSelector:"#my-cal-inline",
+                // PLATZHALTER 4: Deinen Cal.com Link einsetzen
+                calLink: "dein-benutzername/15min", 
+                layout: "month_view"
+            });
+            Cal("ui", {"theme":"dark","styles":{"branding":{"brandColor":"#2563eb"}},"hideEventTypeDetails":false,"layout":"month_view"});
+            </script>
+        </div>
+    </section>
+
+    <section class="py-12 px-6 bg-[#050505]">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-2xl font-bold mb-8 text-center text-gray-400">Oder schreiben Sie uns</h2>
+            <form id="n8n-form" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <input type="text" id="name" required placeholder="Ihr Name" class="w-full bg-zinc-900 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition">
+                    <input type="email" id="email" required placeholder="E-Mail Adresse" class="w-full bg-zinc-900 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition">
+                </div>
+                <input type="tel" id="phone" placeholder="Telefonnummer (optional)" class="w-full bg-zinc-900 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition">
+                <textarea id="message" required rows="4" placeholder="Ihr Projekt oder Anliegen..." class="w-full bg-zinc-900 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition"></textarea>
+                <button type="submit" id="submit-btn" class="w-full bg-white/10 hover:bg-blue-600 border border-white/20 hover:border-transparent text-white font-bold py-4 rounded-xl transition">Nachricht senden</button>
+                <p id="form-status" class="text-center hidden mt-4 font-medium"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5 text-center text-gray-600 bg-[#050505]">
+        <div class="mb-6 font-bold text-xl text-white">KA<span class="text-blue-600">FILM</span></div>
+        <div class="flex justify-center space-x-6 mb-6 text-sm uppercase">
+            <a href="#" class="hover:text-white transition">Impressum</a>
+            <a href="#" class="hover:text-white transition">Datenschutz</a>
+        </div>
+        <p class="text-xs">&copy; 2026 KAFILM - Professionelle Videoproduktion für KMU in der Region Karlsruhe.</p>
+    </footer>
+
+    <script>
+        document.getElementById('n8n-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const btn = document.getElementById('submit-btn');
+            const status = document.getElementById('form-status');
+            
+            btn.innerText = 'Wird gesendet...';
+            btn.disabled = true;
+            btn.classList.add('opacity-50');
+
+            const data = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                message: document.getElementById('message').value,
+                source: 'KAFILM Landingpage'
+            };
+
+            // PLATZHALTER 5: n8n Webhook URL eintragen
+            const webhookUrl = 'https://deine-n8n-instanz.com/webhook/deine-id';
+
+            try {
+                const response = await fetch(webhookUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    status.innerText = '✅ Ihre Nachricht wurde erfolgreich gesendet!';
+                    status.className = 'text-center mt-4 text-green-500 block';
+                    this.reset();
+                } else {
+                    throw new Error('Netzwerkfehler');
+                }
+            } catch (error) {
+                status.innerText = '❌ Fehler beim Senden. Bitte versuchen Sie es später noch einmal.';
+                status.className = 'text-center mt-4 text-red-500 block';
+                console.error('Webhook Error:', error);
+            } finally {
+                btn.innerText = 'Nachricht senden';
+                btn.disabled = false;
+                btn.classList.remove('opacity-50');
+            }
+        });
+    </script>
+</body>
+</html>
